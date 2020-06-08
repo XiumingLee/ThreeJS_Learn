@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My first three.js app</title>
+    <script src="../../libs/three.r117.js"></script>
+    <script src="../../libs/util/stats.js"></script>
+    <script src="../../libs/util/dat.gui.js"></script>
+
+    <script src="js/index.js"></script>
+    <script>
+        // 在浏览器加载对象后触发
+        window.onload = init;  // init方法在`./js/index.js`文件中
+    </script>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        canvas {
+            width: 100%;
+            height: 100%
+        }
+    </style>
+</head>
+<body>
+<!-- 保存输出的Div -->
+<div id="webgl-div"></div>
+<!-- 输出帧数的div-->
+<div id="stats-div"></div>
+</body>
+</html>
